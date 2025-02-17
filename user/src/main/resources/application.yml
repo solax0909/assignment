@@ -1,0 +1,17 @@
+server:
+  port: 8088
+
+spring:
+  ## database config
+  datasource:
+    url: jdbc:sqlserver://localhost:1433;databaseName=db_personal;encrypt=false
+    username: sa
+    password: 123
+    driverClassName: com.microsoft.sqlserver.jdbc.SQLServerDriver
+
+  ## hibernate config
+  jpa:
+    show-sql: true
+    hibernate:
+      dialect: org.hibernate.dialect.SQLServerDialect
+      ddl-auto: update
